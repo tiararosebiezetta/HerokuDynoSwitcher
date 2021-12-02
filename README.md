@@ -1,6 +1,6 @@
 # Heroku Dyno Switcher
 ## What is this?
-A little python project to make your heroku app alive forever without concerned about dyno hours.
+A little python project to make your heroku app alive forever without being concerned about dyno hours.
 
 ## Mechanism
 The main idea is to use two accs (yeah, you need 2 of them to make this work) with two same apps and shift the dyno every 1st and 15th of a month.
