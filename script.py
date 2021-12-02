@@ -22,12 +22,12 @@ FIRST_SWITCH = 0
 # Forever loop of the process
 while FIRST_SWITCH is not None:
   if(FIRST_SWITCH == 0):
-    print("1st app is running on the first acc")
+    print("Your app is running on the first acc")
     FIRST_SWITCH = 1
-    print("1st app has been shifted to the second acc")
+    print("Youe app has been shifted to the second acc")
   elif(FIRST_SWITCH == 1):
-    print("1st app is running on the second acc")
+    print("Your app is running on the second acc")
     FIRST_SWITCH = 0
-    print("1st app has been shifted to the first acc")
+    print("Your app has been shifted to the first acc")
   print("The script has been executed. Waiting for the next loop in 10 minutes..")
   time.sleep(5)
