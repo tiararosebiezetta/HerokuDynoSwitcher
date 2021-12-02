@@ -2,6 +2,7 @@
 # This is still WIP!
 
 import time
+import heroku3
 
 # Required vars
 # A = The creds of the first app and account
