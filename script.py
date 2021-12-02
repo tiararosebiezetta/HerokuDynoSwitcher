@@ -27,7 +27,7 @@ while FIRST_SWITCH is not None:
     FIRST_SWITCH = 1
     print("Youe app has been shifted to the second acc")
   elif(FIRST_SWITCH == 1):
-        heroku_conn = heroku3.from_key(FIRST_B_APIKEY)
+    heroku_conn = heroku3.from_key(FIRST_B_APIKEY)
     print("Your app is running on the second acc")
     FIRST_SWITCH = 0
     print("Your app has been shifted to the first acc")
