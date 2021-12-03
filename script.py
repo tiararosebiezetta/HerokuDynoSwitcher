@@ -36,5 +36,17 @@ while FIRST_SWITCH is not None:
     print("The first app in the second acc has been scaled up.")
     FIRST_SWITCH = 1
     print("Your first app has been shifted to the second acc.")
+  elif(FIRST_SWITCH == 1 and today.day == 1):
+    print("Your first app is running on the second acc. Changing the dyno to the first acc..")
+    heroku_conn = heroku3.from_key(FIRST_B_APIKEY)
+    app = heroku_conn.app(FIRST_B_APPNAME)
+    app.process_formation()[FIRST_PROCESSTYPE].scale(0)
+    print("The first app in the second acc has been scaled down")
+    heroku_conn = heroku3.from_key(FIRST_A_APIKEY)
+    app = heroku_conn.app(FIRST_A_APPNAME)
+    app.process_formation()[FIRST_PROCESSTYPE].scale(1)
+    print("The first app in the first acc has been scaled up.")
+    FIRST_SWITCH = 0
+    print("Your first app has been shifted to the first acc.")
   print("The script has been executed. Waiting for the next loop in 10 minutes..")
   time.sleep(600)
