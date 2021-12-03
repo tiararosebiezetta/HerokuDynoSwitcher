@@ -14,7 +14,7 @@ THIS FREAKING THING IS STILL IN WIP AND I HAVEN'T EVEN TESTED THIS FULLY, SO IT 
 SO PLEASE CHECK MY CODE, MY PRO BRO!
 ```
 
-- Make sure you have deployed two same things to two apps in two different heroku accounts. Only enable dyno in one of the app, not both.
+- Make sure you have deployed two same things to two apps in two different heroku accounts. Only enable dyno in the primary app.
 - Fork this repo.
 - Make a blank app in Railway.
 - Add these vars:
