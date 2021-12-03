@@ -1,0 +1,27 @@
+{
+	"name": "Heroku Dyno Switcher",
+	"description": "A little script to switch dynos between apps and accounts",
+	"repository": "https://github.com/tiararosebiezetta/HerokuDynoSwitcher/tree/button",
+	"env": {
+		"FIRST_PROCESSTYPE": {
+			"description": "The process type of your app, you can use web, worker or something else. Check it in the Resources tab of your heroku app.",
+			"required": false
+		},
+		"FIRST_A_APPNAME": {
+			"description": "The app name of your primary app.",
+			"required": false
+		},
+		"FIRST_A_APIKEY": {
+			"description": "The API key of the heroku account your primary app is in. Check it in your heroku settings, in the last of the page.",
+			"required": false
+		},
+		"FIRST_B_APPNAME": {
+			"description": "The app name of your secondary app.",
+			"required": false
+		},
+		"FIRST_B_APIKEY": {
+			"description": "The API key of the heroku account your secondary app is in. Check it in your heroku settings, in the last of the page.",
+			"required": false
+		}
+	}
+}
