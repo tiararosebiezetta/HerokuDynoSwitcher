@@ -7,8 +7,8 @@ from datetime import datetime
 import heroku3
 
 # Required vars
-# A = The creds of the first app and account
-# B = The creds of the second app and account
+# A = The creds of the first account
+# B = The creds of the second account
 FIRST_A_APPNAME = os.environ.get('FIRST_A_APPNAME')
 FIRST_A_APIKEY = os.environ.get('FIRST_A_APIKEY')
 FIRST_B_APPNAME = os.environ.get('FIRST_B_APPNAME')
