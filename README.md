@@ -17,7 +17,6 @@ You need to deploy two similar apps to two heroku accounts and only enable the d
 <b>Where to deploy/run this?</b>
 - Another heroku account (deploy via GitHub)
 - Railway (deploy via GitHub)
-- Napkin.io (copy the script)
 - Any PaaS hostings or always-on python hostings
 - Your own RDP/VPS
 
