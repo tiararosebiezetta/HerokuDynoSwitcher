@@ -47,7 +47,7 @@ while FIRST_PROCESSTYPE is not None:
       app.process_formation()[FIRST_PROCESSTYPE].scale(1)
       print("[#1] The first app in the second acc has been scaled up.")
       print("[#1] Your first app has been shifted to the second acc.")
-    elif(today.day == 1 and today.hour == 0):
+    elif(today.day == 1 and 0 <= today.hour <= 6):
       print("[#1] Changing the dyno to the first acc..")
       heroku_conn = heroku3.from_key(FIRST_B_APIKEY)
       app = heroku_conn.app(FIRST_B_APPNAME)
@@ -73,7 +73,7 @@ while FIRST_PROCESSTYPE is not None:
       app.process_formation()[SECOND_PROCESSTYPE].scale(1)
       print("[#2] The second app in the second acc has been scaled up.")
       print("[#2] Your second app has been shifted to the second acc.")
-    elif(today.day == 1 and today.hour == 0):
+    elif(today.day == 1 and 0 <= today.hour <= 6):
       print("[#2] Your second app is running on the second acc. Changing the dyno to the first acc..")
       heroku_conn = heroku3.from_key(SECOND_B_APIKEY)
       app = heroku_conn.app(SECOND_B_APPNAME)
@@ -99,7 +99,7 @@ while FIRST_PROCESSTYPE is not None:
       app.process_formation()[THIRD_PROCESSTYPE].scale(1)
       print("[#3] The third app in the second acc has been scaled up.")
       print("[#3] Your third app has been shifted to the second acc.")
-    elif(today.day == 1 and today.hour == 0):
+    elif(today.day == 1 and 0 <= today.hour <= 6):
       print("[#3] Changing the dyno to the first acc..")
       heroku_conn = heroku3.from_key(THIRD_B_APIKEY)
       app = heroku_conn.app(THIRD_B_APPNAME)
