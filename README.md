@@ -1,11 +1,12 @@
 # Heroku Dyno Switcher
 ## What is this?
-A little python project to make your heroku app alive forever without being concerned about dyno hours.
+A little python project to make your heroku app alive forever without being concerned about dyno hours. You do not need to bother adding a credit card to get more dyno hours. I know this is just a petty trick, but at least, it's useful for me. If you use another service than heroku, or you have credit cards to get your heroku accounts verified, or you don't like what I'm doing, you may stop reading this and leave, thank you.
 
 ## Mechanism
-The main idea is to use two accs (yeah, you need 2 of them to make this work) with two same apps and shift the dyno every 1st and 15th of a month.
-Every 10 mins, the script will check if today is either 1st or 15th of a month. If it's true, then it'll switch the dyno based on the heroku app name, heroku API key, and the process type vars you have entered.
-This will make your app restart once more in those days though besides the usual 24h restart in heroku free tier. And of course, you need to deploy them first.
+The main idea is to use two accounts (yeah, you need 2 of them to make this work) with two same apps and shift the dyno every 1st and 15th of a month.<br>
+Every 10 mins, the script will check if today is either 1st or 15th of a month. If it's true, then it'll switch the dyno based on the heroku app name, heroku API key, and the process type vars you have entered.<br>
+This may make your app restart once more at 1st and 15th of the month though (besides the usual 24h restart in heroku free tier).<br>
+Another drawback is that you need to deploy to both apps at first, and whenever there's a change you want to make to the app, you need to deploy to both apps too. Patience is really needed for that.
 
 ## How?
 Before you use this, know that I am dumb and not good at python. When I tested it, it worked. But problems may occur whenever, so please, if you have time, check my code in `script.py`. That will be highly appriciated.
