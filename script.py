@@ -18,13 +18,13 @@ FIRST_PROCESSTYPE = os.environ.get('FIRST_PROCESSTYPE')
 # Initial vars
 # 0 = Use the app in the first acc
 # 1 = Use the app in the second acc
-FIRST_SWITCH = 0
+FIRST_SWITCH = "0"
 
 # Forever loop of the process
 while FIRST_SWITCH is not None:
   today = datetime.now()
   print("Checking the conditions for the first app..")
-  if(FIRST_SWITCH == 0 and today.day == 15):
+  if(FIRST_SWITCH == "0" and today.day == 15):
     print("Your first app is running on the first acc. Changing the dyno to the second acc..")
     heroku_conn = heroku3.from_key(FIRST_A_APIKEY)
     app = heroku_conn.app(FIRST_A_APPNAME)
@@ -34,9 +34,9 @@ while FIRST_SWITCH is not None:
     app = heroku_conn.app(FIRST_B_APPNAME)
     app.process_formation()[FIRST_PROCESSTYPE].scale(1)
     print("The first app in the second acc has been scaled up.")
-    FIRST_SWITCH = 1
+    FIRST_SWITCH = "1"
     print("Your first app has been shifted to the second acc.")
-  elif(FIRST_SWITCH == 1 and today.day == 1):
+  elif(FIRST_SWITCH == "1" and today.day == 1):
     print("Your first app is running on the second acc. Changing the dyno to the first acc..")
     heroku_conn = heroku3.from_key(FIRST_B_APIKEY)
     app = heroku_conn.app(FIRST_B_APPNAME)
@@ -46,7 +46,7 @@ while FIRST_SWITCH is not None:
     app = heroku_conn.app(FIRST_A_APPNAME)
     app.process_formation()[FIRST_PROCESSTYPE].scale(1)
     print("The first app in the first acc has been scaled up.")
-    FIRST_SWITCH = 0
+    FIRST_SWITCH = "0"
     print("Your first app has been shifted to the first acc.")
   print("The script has been executed. Waiting for the next loop in 10 minutes..")
   time.sleep(600)
