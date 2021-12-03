@@ -4,9 +4,11 @@ A little python project to make your heroku app alive forever without being conc
 
 ## Mechanism
 The main idea is to use two accounts (yeah, you need 2 of them to make this work) with two same apps and shift the dyno every 1st and 15th of a month.<br>
-Every 10 mins, the script will check if today is either 1st or 15th of a month. If it's true, then it'll switch the dyno based on the heroku app name, heroku API key, and the process type vars you have entered.<br>
-This may make your app restart once more at 1st and 15th of the month though (besides the usual 24h restart in heroku free tier).<br>
-Another drawback is that you need to deploy to both apps at first, and whenever there's a change you want to make to the app, you need to deploy to both apps too. Patience is really needed for that.
+Every 10 mins, the script will check if today is either 1st or 15th of a month. If it's true, then it'll switch the dyno based on the heroku app name, heroku API key, and the process type vars you have entered.<br><br>
+The drawbacks are:
+- This may make your app restart once more at 1st and 15th of the month though (besides the usual 24h restart in heroku free tier).
+- You need to deploy to both apps at first, and whenever there's a change you want to make to the app, you need to deploy to both apps too. Patience is really needed for that.
+- This is basically a scheduler, so the primary app's dyno will be automatically every 1st and the secondary app's dyno will be automatically every 15th. That will be bad for you when you don't want to activate the dynos at those certain days. Deactivate this script first before doing that.
 
 ## How?
 Before you use this, know that I am dumb and not good at python. When I tested it, it worked. But problems may occur whenever, so please, if you have time, check my code in `script.py`. That will be highly appriciated.
