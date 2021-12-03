@@ -1,5 +1,5 @@
 # I am really noob, so you may find the code written here is so bad you wanna puke. Sorry for that.
-# By default, this script support 3 pair of same apps for switching.
+# By default, this script support up to 3 pair of same apps for switching.
 # You may scale it if you want that.
 # This is still WIP!
 
