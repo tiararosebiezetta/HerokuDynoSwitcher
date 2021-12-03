@@ -36,3 +36,9 @@ You need to deploy two similar apps to two heroku accounts and only enable the d
 The script supports up to 3 pair of apps simultaneously. You may add these vars if you need it.<br>
 `SECOND_PROCESSTYPE`, `SECOND_A_APPNAME`, `SECOND_A_APIKEY`, `SECOND_B_APPNAME`, `SECOND_B_APIKEY`<br>
 `THIRD_PROCESSTYPE`, `THIRD_A_APPNAME`, `THIRD_A_APIKEY`, `THIRD_B_APPNAME`, `THIRD_B_APIKEY`<br>
+
+## Credits and References
+- <a href="https://github.com/tiararosebiezetta">Me</a> who happened to have written this very little and simple script (<a href="https://t.me/katarina_novi">My telegram</a>)
+- https://pypi.org/project/heroku3/ for allowing us using heroku API with python
+- Many userbot repos that I looked to see how heroku3 module works
+- And many others that I can't say all of them here
