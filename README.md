@@ -15,7 +15,9 @@ Before you use this, know that I am dumb and not good at python. When I tested i
 You need to deploy two similar apps to two heroku accounts and only enable the dyno of the primary app.
 
 <b>Where to deploy/run this?</b>
-- Another heroku account (deploy via GitHub)
+- Another heroku account (add additional variables later by yourself)
+<p><a href="https://dashboard.heroku.com/new?template=https://github.com/tiararosebiezetta/HerokuDynoSwitcher"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" alt="Deploy to Heroku" /></a></p>
+
 - Railway (deploy via GitHub)
 - Any PaaS hostings or always-on python hostings
 - Your own RDP/VPS
