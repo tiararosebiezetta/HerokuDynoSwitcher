@@ -8,4 +8,4 @@ Every 10 mins, the script will check if today is either 1st or 15th of a month. 
 This will make your app restart once more in those days though besides the usual 24h restart in heroku free tier.
 
 ## How?
-I am dumb. I'm not good at python, it's more like an idea for now. But I'll try to make this done as a challenge. Ah btw, this script will need to run continuously to work, so most likely, the platform to use is Railway.
+I am dumb. I'm not good at python, but I'll try to make this done as a challenge. See `script.py` for the progress. Ah btw, this script will need to run continuously to work, so most likely, the platform to use is Railway.
