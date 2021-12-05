@@ -8,7 +8,7 @@ Every 10 mins, the script will check if today is either 1st or 15th of a month. 
 The drawbacks are:
 - This may make your app restart once more at 1st and 15th of the month though (besides the usual 24h restart in heroku free tier).
 - You need to deploy to both apps at first, and whenever there's a change you want to make to the app, you need to deploy to both apps too. Patience is really needed for that.
-- This is basically a scheduler, so the primary app's dyno will be automatically activated every 10 minutes at 1st of a month and the secondary app's dyno will be automatically every 10 minutes at 15th of a month. That will be bad for you when you don't want to activate the dynos at those certain days. Deactivate this script first before doing that.
+- This is basically a scheduler, so the primary app's dyno will be automatically activated every 10 minutes for the entire day of 1st of a month and the secondary app's dyno will be automatically activated every 10 minutes for the entire day of 15th of a month. That will be bad for you when you don't want to activate the dynos at those certain days. Deactivate this script first before doing that.
 - Heroku API will be called more at 1st and 15th of a month with this script. At least, there'll be 18 API calls per hour per acc. It's not that many and it's acceptable, but please note this if you are planning to use heroku API calls.
 
 ## How?
