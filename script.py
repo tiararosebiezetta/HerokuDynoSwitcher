@@ -25,16 +25,16 @@ THIRD_A_APIKEY = os.environ.get('THIRD_A_APIKEY',"")
 THIRD_B_APPNAME = os.environ.get('THIRD_B_APPNAME',"")
 THIRD_B_APIKEY = os.environ.get('THIRD_B_APIKEY',"")
 THIRD_PROCESSTYPE = os.environ.get('THIRD_PROCESSTYPE',"")
-FOURTH_A_APPNAME = os.environ.get('THIRD_A_APPNAME',"")
-FOURTH_A_APIKEY = os.environ.get('THIRD_A_APIKEY',"")
-FOURTH_B_APPNAME = os.environ.get('THIRD_B_APPNAME',"")
-FOURTH_B_APIKEY = os.environ.get('THIRD_B_APIKEY',"")
-FOURTH_PROCESSTYPE = os.environ.get('THIRD_PROCESSTYPE',"")
-FIFTH_A_APPNAME = os.environ.get('THIRD_A_APPNAME',"")
-FIFTH_A_APIKEY = os.environ.get('THIRD_A_APIKEY',"")
-FIFTH_B_APPNAME = os.environ.get('THIRD_B_APPNAME',"")
-FIFTH_B_APIKEY = os.environ.get('THIRD_B_APIKEY',"")
-FIFTH_PROCESSTYPE = os.environ.get('THIRD_PROCESSTYPE',"")
+FOURTH_A_APPNAME = os.environ.get('FOURTH_A_APPNAME',"")
+FOURTH_A_APIKEY = os.environ.get('FOURTH_A_APIKEY',"")
+FOURTH_B_APPNAME = os.environ.get('FOURTH_B_APPNAME',"")
+FOURTH_B_APIKEY = os.environ.get('FOURTH_B_APIKEY',"")
+FOURTH_PROCESSTYPE = os.environ.get('FOURTH_PROCESSTYPE',"")
+FIFTH_A_APPNAME = os.environ.get('FIFTH_A_APPNAME',"")
+FIFTH_A_APIKEY = os.environ.get('FIFTH_A_APIKEY',"")
+FIFTH_B_APPNAME = os.environ.get('FIFTH_B_APPNAME',"")
+FIFTH_B_APIKEY = os.environ.get('FIFTH_B_APIKEY',"")
+FIFTH_PROCESSTYPE = os.environ.get('FIFTH_PROCESSTYPE',"")
 
 # The main script
 # Forever loop of the process (delayed every 10 minutes)
@@ -120,7 +120,7 @@ while FIRST_PROCESSTYPE is not None:
       print("[#3] Your third app has been shifted to the first acc.")
       
   # fourth pair of apps
-  print("Checking the conditions for the third app..")
+  print("Checking the conditions for the fourth app..")
   if(len(FOURTH_PROCESSTYPE) != 0 and len(FOURTH_A_APIKEY) != 0 and len(FOURTH_A_APPNAME) != 0 and len(FOURTH_B_APIKEY) != 0 and len(FOURTH_B_APPNAME) != 0):
     if(today.day == 15):
       print("[#4] Changing the dyno to the second acc..")
@@ -146,7 +146,7 @@ while FIRST_PROCESSTYPE is not None:
       print("[#4] Your fourth app has been shifted to the first acc.")
       
   # fifth pair of apps
-  print("Checking the conditions for the third app..")
+  print("Checking the conditions for the fifth app..")
   if(len(FIFTH_PROCESSTYPE) != 0 and len(FIFTH_A_APIKEY) != 0 and len(FIFTH_A_APPNAME) != 0 and len(FIFTH_B_APIKEY) != 0 and len(FIFTH_B_APPNAME) != 0):
     if(today.day == 15):
       print("[#5] Changing the dyno to the second acc..")
