@@ -1,6 +1,13 @@
 # Heroku Dyno Switcher
+
 ## What is this?
 A little python project to make your heroku app alive forever without being concerned about dyno hours. You do not need to bother adding a credit card to get more dyno hours. I know this is just a petty trick, but at least, it's useful for me. If you use another service than heroku, or you have credit cards to get your heroku accounts verified, or you don't like what I'm doing, you may stop reading this and leave, thank you.
+
+## Update
+Someone already made a similar concept and it's easier to apply than this script.<br>
+https://heroku.viperadnan.gq/duo<br>
+<p>You can just add your app names and heroku API keys there, but use it with your own risk.</p>
+<p>You may use this script if you don't trust the site your credentials, as this repo is open source and you can see what's written in the code.</p>
 
 ## Mechanism
 The main idea is to use two accounts (yeah, you need 2 of them to make this work) with two same apps and shift the dyno every 1st and 15th of a month.<br>
