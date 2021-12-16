@@ -19,13 +19,13 @@ The drawbacks are:
 - Heroku API will be called more at 1st and 15th of a month with this script. At least, there'll be 18 API calls per hour per acc. It's not that many and it's acceptable, but please note this if you are planning to use heroku API calls.
 
 ## How?
-Before you use this, know that I am dumb and not good at python. When I tested it, it worked. But problems may occur whenever, so please, if you have time, check my code in `script.py`. That will be highly appriciated.
+Before you use this, know that I am dumb and not good at python. When I tested it, it worked. But problems may occur whenever, so please, if you have time, check my code in `script.py` and do pull request (or just make your own fork with your own features). That will be highly appriciated.
 
 <b>What to do first?</b><br>
 You need to deploy two similar apps to two heroku accounts and only enable the dyno of the primary app.
 
 <b>Where to deploy/run this?</b>
-- Another heroku account (add additional variables later by yourself)
+- Another heroku account, unverified heroku account works too, no need for 1000 dyno hours as this script will only run on 1st (when dyno hours reset) and 15th of a month. (add additional variables later by yourself)
 <p><a href="https://dashboard.heroku.com/new?template=https://github.com/tiararosebiezetta/HerokuDynoSwitcher"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" alt="Deploy to Heroku" /></a></p>
 
 - Railway (deploy via GitHub)
@@ -47,7 +47,7 @@ The script supports up to 5 pair of apps simultaneously. You may add these vars 
 `FIFTH_PROCESSTYPE`, `FIFTH_A_APPNAME`, `FIFTH_A_APIKEY`, `FIFTH_B_APPNAME`, `FIFTH_B_APIKEY`<br>
 
 ## Credits and References
-- <a href="https://github.com/tiararosebiezetta">Me</a> who happened to have written this very little and simple script (<a href="https://t.me/katarina_novi">My telegram</a>)
+- <a href="https://github.com/tiararosebiezetta">Me</a> who happened to have written this very little and simple script (<a href="https://t.me/katarina_ox">My telegram</a> and <a href="https://t.me/katarina_novi">my another telegram acc</a>)
 - https://pypi.org/project/heroku3/ for allowing us using heroku API with python
 - Many userbot repos that I looked to see how heroku3 module works
 - And many others that I can't say all of them here
