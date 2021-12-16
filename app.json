@@ -1,7 +1,7 @@
 {
 	"name": "Heroku Dyno Switcher",
 	"description": "A little script to switch dynos between apps and accounts",
-	"repository": "https://github.com/tiararosebiezetta/HerokuDynoSwitcher/tree/button",
+	"repository": "https://github.com/tiararosebiezetta/HerokuDynoSwitcher",
 	"env": {
 		"FIRST_PROCESSTYPE": {
 			"description": "The process type of your app, you can use web, worker or something else. Check it in the Resources tab of your heroku app.",
