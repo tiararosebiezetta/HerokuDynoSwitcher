@@ -1,13 +1,16 @@
 # Heroku Dyno Switcher
 
 ## Description
-<p>A little python project to make your heroku app alive forever without being concerned about dyno hours. You do not need to bother adding a credit card to get more dyno hours.</p><p>I know this is just a petty trick, but at least, it's useful for me. If you use another service than heroku, or you have credit cards to get your heroku accounts verified, or you don't like what I'm doing, you may stop reading this and leave, thank you.</p>
+<p>A little python project to make your heroku app alive forever without being concerned about dyno hours. You do not need to bother adding a credit card to get more dyno hours.</p>
+
+| ℹ️ I know this is just a petty trick, but at least, it's useful for me. If you use another service than heroku, or you have credit cards to get your heroku accounts verified, or you don't like what I'm doing, you may stop reading this and leave, thank you.
+| ---
 
 ## Mechanism
 <p>The main idea is to use two accounts (yeah, you need 2 of them to make this work) with two same apps and shift the dyno every 1st and 15th of a month.</p>
-<p>There are two methods you can use, Github Actions and Autoloop.</p>
-<p>I recommend you to use Github Actions because it's less complicated and less obstructive.</p>
-<h4>Github Actions method</h4>
+<p>There are two methods you can use, No loop and Autoloop.</p>
+<p>I recommend you to use no loop method with Github Actions because it's less complicated and less obstructive.</p>
+<h4>No loop method</h4>
 <p>There are two Github Actions workflows that have been set with cron jobs. They will run automatically at 00:00 UTC 1st and 15th of a month and when they're running, they will switch the dynos respectively.<br>
 </p>
 <h4>Autoloop method</h4>
@@ -27,7 +30,7 @@ https://heroku.viperadnan.gq/duo<br>
 <p>You may use this script if you don't trust the site your credentials, as this repo is open source and you can see what's written in the code.</p>
 
 ## Deployment
-Before you use this, know that problems may occur whenever because of my poor coding skill, so please, if you have time, check my code in `script.py` (and `script_noloop.py` for Github Actions method), report any error in Issues, and do pull request (or just make your own fork with your own features if it's personal). That will be highly appriciated.
+Before you use this, know that problems may occur whenever because of my poor coding skill, so please, if you have time, check my code in `script.py` (and `script_noloop.py` for no loop method one), report any error in Issues, and do pull request (or just make your own fork with your own features if it's personal). That will be highly appriciated.
 <h4>What to do first?</h4>
 You need to deploy two similar apps to two heroku accounts. If the day you deploy this script is under 15th (in UTC), only enable the dyno of the app in the first acc. If it's 15th or more than that (in UTC), only enable the dyno of the app in the second acc. Otherwise, the script won't run well in the first month (the next month will be adjusted correctly automatically).
 <h4>Where to deploy this?</h4>
