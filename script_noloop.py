@@ -37,7 +37,6 @@ FIFTH_B_APIKEY = os.environ.get('FIFTH_B_APIKEY',"")
 FIFTH_PROCESSTYPE = os.environ.get('FIFTH_PROCESSTYPE',"")
 
 # The main script
-# Forever loop of the process (delayed every 10 
 today = datetime.now()
 
 # First pair of apps
@@ -180,5 +179,5 @@ if(len(FIFTH_PROCESSTYPE) != 0 and len(FIFTH_A_APIKEY) != 0 and len(FIFTH_A_APPN
     print("[#5] The fifth app in the first acc has been scaled up.")
     print("[#5] Your fifth app has been shifted to the first acc.")
     
-# Ending the current process, thus delaying it for 10 minutes and running it again afterward until the end (not really, until the server this script is hosted dies or you stop it)
-print("The script has been executed. Waiting for the next loop in 10 minutes..")
+# Ending the current process
+print("The script has been executed.")
