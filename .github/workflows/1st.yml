@@ -2,6 +2,7 @@ name: Heroku Dyno Switcher (1st)
 on:
   schedule:
   - cron: "0 0 1 * *"
+  workflow_dispatch:
 jobs:
   1st:
     runs-on: ubuntu-latest
