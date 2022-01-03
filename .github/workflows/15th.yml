@@ -12,10 +12,10 @@ jobs:
         with:
           python-version: 3.8
           cache: 'pip'
+      - name: Installing heroku3
+        run: pip install -r requirements.txt
       - name: Switching the dyno
-        run: |
-          pip install -r requirements.txt
-          python3 script_noloop.py
+        run: python3 script_noloop.py
         env:
           FIRST_PROCESSTYPE: ${{ secrets.FIRST_PROCESSTYPE }}
           FIRST_A_APIKEY: ${{ secrets.FIRST_A_APIKEY }}
