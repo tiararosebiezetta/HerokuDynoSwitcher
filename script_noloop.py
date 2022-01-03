@@ -180,4 +180,4 @@ if(len(FIFTH_PROCESSTYPE) != 0 and len(FIFTH_A_APIKEY) != 0 and len(FIFTH_A_APPN
     print("[#5] Your fifth app has been shifted to the first acc.")
     
 # Ending the current process
-print("The script has been executed.",FIRST_PROCESSTYPE)
+print("The script has been executed.")
