@@ -18,7 +18,9 @@ In this section, I will tell you the steps to make this script running in Github
 ![image](https://user-images.githubusercontent.com/92842340/148035673-e84c1651-ecab-46aa-95ca-8bb526723ace.png)
 7. Press the workflow one by one, and press "Enable workflow" for both of them.
 ![image](https://user-images.githubusercontent.com/92842340/148036037-740c33cd-d136-4530-87bd-9145e80b1568.png)
-8. You have set it up the script!
+8. You're done. The script will be active from now on.
 ![image](https://user-images.githubusercontent.com/92842340/148036124-72adb09d-f49d-4ff7-b503-094edb7a4d2b.png)
 
 The script has been scheduled to run at 00.00 UTC in 1st and 15th of a month.
+
+If you want to stop the scheduler, delete your fork repo.
