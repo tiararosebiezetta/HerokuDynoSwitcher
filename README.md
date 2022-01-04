@@ -75,4 +75,5 @@ If you need more than 5 apps, you can extend the code as much as you want, or if
 - <a href="https://github.com/tiararosebiezetta">Me</a> who happened to have written this very little and simple script (<a href="https://t.me/katarina_ox">My telegram</a> and <a href="https://t.me/katarina_novi">my another telegram acc</a>)
 - https://pypi.org/project/heroku3/ for allowing us using heroku API with python
 - Many userbot repos that I looked to see how heroku3 module works
+- <a href="https://github.com/tiararosebiezetta">@ZekXtreme</a> for Github Actions deployment concept
 - And many others that I can't say all of them here
