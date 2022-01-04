@@ -39,7 +39,7 @@ https://heroku.viperadnan.gq/duo<br>
 <p>You may use this script if you don't trust the site your credentials, as this repo is open source and you can see what's written in the code.</p>
 
 ## 🚀 Deployment
-Before you use this, know that problems may occur whenever because of my poor coding skill, so please, if you have time, check my code in `script.py` (and `script_noloop.py` for no loop method one), report any error in Issues, and do pull request (or just make your own fork with your own features if it's personal). That will be highly appriciated.
+Before you use this, know that problems may occur whenever because of my poor coding skill, so please, if you have time, check my code in `script.py` for Autoloop method and `script_noloop.py` for No loop method, report any error in Issues, and do pull request (or just make your own fork with your own features if it's personal). That will be highly appriciated.
 <br>
 <h4>What to do first?</h4>
 You need to deploy two similar apps to two heroku accounts. If the day you deploy this script is under 15th (in UTC), only enable the dyno of the app in the first acc. If it's 15th or more than that (in UTC), only enable the dyno of the app in the second acc. Otherwise, the script won't run well in the first month (the next month will be adjusted correctly automatically).
@@ -68,6 +68,8 @@ The script supports up to 5 pair of apps simultaneously. You may add these vars 
 `THIRD_PROCESSTYPE`, `THIRD_A_APPNAME`, `THIRD_A_APIKEY`, `THIRD_B_APPNAME`, `THIRD_B_APIKEY`<br>
 `FOURTH_PROCESSTYPE`, `FOURTH_A_APPNAME`, `FOURTH_A_APIKEY`, `FOURTH_B_APPNAME`, `FOURTH_B_APIKEY`<br>
 `FIFTH_PROCESSTYPE`, `FIFTH_A_APPNAME`, `FIFTH_A_APIKEY`, `FIFTH_B_APPNAME`, `FIFTH_B_APIKEY`<br>
+
+If you need more than 5 apps, you can extend the code as much as you want, or if you don't know how to do it, just deploy more of this script, it works too.
 
 ## 📝 Credits and References
 - <a href="https://github.com/tiararosebiezetta">Me</a> who happened to have written this very little and simple script (<a href="https://t.me/katarina_ox">My telegram</a> and <a href="https://t.me/katarina_novi">my another telegram acc</a>)
