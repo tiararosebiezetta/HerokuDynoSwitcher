@@ -23,4 +23,7 @@ In this section, I will tell you the steps to make this script running in Github
 
 The script has been scheduled to run at 00.00 UTC in 1st and 15th of a month.
 
-If you want to stop the scheduler, delete your fork repo.
+If you want to stop the switching for a certain app, remove the process type var of the respective vars and it won't be switched when the time comes.
+If you want to stop the scheduler completely, go to the repo's settings, press Actions tab, and disable it.
+
+If you want to deploy more of this repo in Github, you can import this repo and enable the actions in the repo's settings or you can also make a new organization and fork it there. Both work well.
