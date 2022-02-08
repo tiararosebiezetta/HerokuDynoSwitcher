@@ -1,7 +1,7 @@
-name: Heroku Dyno Switcher (1st)
+name: Heroku Dyno Switcher
 on:
   schedule:
-  - cron: "0 0 1 * *"
+  - cron: "0 0 1,15 * *"
   workflow_dispatch:
 jobs:
   build:
