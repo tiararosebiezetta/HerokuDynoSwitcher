@@ -16,10 +16,10 @@ In this section, I will tell you the steps to make this script running in Github
 ![image](https://user-images.githubusercontent.com/92842340/148035579-4bd526f0-723c-4283-a489-2ac28c9023cd.png)
 6. Accept it
 ![image](https://user-images.githubusercontent.com/92842340/148035673-e84c1651-ecab-46aa-95ca-8bb526723ace.png)
-7. Press the workflow one by one, and press "Enable workflow" for both of them.
-![image](https://user-images.githubusercontent.com/92842340/148036037-740c33cd-d136-4530-87bd-9145e80b1568.png)
+7. Press the workflow, and press "Enable workflow".
+![image](https://user-images.githubusercontent.com/92842340/152900180-d47d2452-9fee-4275-9977-8c51defb2b62.png)
 8. You're done. The script will be active from now on.
-![image](https://user-images.githubusercontent.com/92842340/148036124-72adb09d-f49d-4ff7-b503-094edb7a4d2b.png)
+![image](https://user-images.githubusercontent.com/92842340/152900214-ef2cfde7-dd4a-4fd6-8729-1f0c83431364.png)
 
 The script has been scheduled to run at 00.00 UTC in 1st and 15th of a month.
 
