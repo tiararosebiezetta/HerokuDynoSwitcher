@@ -1,5 +1,14 @@
 # Heroku Dyno Switcher
 
+## Navigation
+1. <a href="https://github.com/tiararosebiezetta/HerokuDynoSwitcher/#-description">Description</a>
+2. <a href="https://github.com/tiararosebiezetta/HerokuDynoSwitcher/#%EF%B8%8F-mechanism">Mechanism</a>
+3. <a href="https://github.com/tiararosebiezetta/HerokuDynoSwitcher/#%EF%B8%8F-drawbacks">Drawbacks</a>
+4. <a href="https://github.com/tiararosebiezetta/HerokuDynoSwitcher/#-alternative">Alternative</a>
+5. <a href="https://github.com/tiararosebiezetta/HerokuDynoSwitcher/#-deployment">Deployment</a>
+6. <a href="https://github.com/tiararosebiezetta/HerokuDynoSwitcher/#-variables">Variables</a>
+7. <a href="https://github.com/tiararosebiezetta/HerokuDynoSwitcher/#-improvement">Improvement</a>
+8. <a href="https://github.com/tiararosebiezetta/HerokuDynoSwitcher/#-credits-and-references">Credits and References</a>
 ## 📋 Description
 <p>A little python project to make your heroku app alive forever without being concerned about dyno hours. You do not need to bother adding a credit card to get more dyno hours.</p>
 <p align="center">
