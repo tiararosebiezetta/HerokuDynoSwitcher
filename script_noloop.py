@@ -199,4 +199,4 @@ else:
   print("Variables for the first app are not fully filled.")
     
 # Ending the current process
-print("The script has been executed.")
+print("\nThe script has been executed.")
