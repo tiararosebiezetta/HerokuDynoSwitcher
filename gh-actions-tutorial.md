@@ -1,9 +1,9 @@
 # Running Heroku Dyno Switcher script in Github 
 
 ## Navigation
-1. <a href="https://github.com/tiararosebiezetta/HerokuDynoSwitcher/blob/master/gh-actions-tutorial.md#tutorial">Tutorial</a>
-2. <a href="https://github.com/tiararosebiezetta/HerokuDynoSwitcher/blob/master/gh-actions-tutorial.md#stopping">Stopping</a>
-3. <a href="https://github.com/tiararosebiezetta/HerokuDynoSwitcher/blob/master/gh-actions-tutorial.md#need-more-than-5-apps-to-switch">Need more than 5 apps to switch?</a>
+- <a href="#tutorial">Tutorial</a>
+- <a href="#stopping">Stopping</a>
+- <a href="#need-more-than-5-apps-to-switch">Need more than 5 apps to switch?</a>
 
 ## Tutorial
 
