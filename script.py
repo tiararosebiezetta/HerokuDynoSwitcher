@@ -201,5 +201,5 @@ while True:
     print("Variables for the fifth app are not fully filled.")
       
   # Ending the current process, thus delaying it for 10 minutes and running it again afterward until the end (not really, until the server this script is hosted dies or you stop it)
-  print("The script has been executed. Waiting for the next loop in 10 minutes..")
+  print("\nThe script has been executed. Waiting for the next loop in 10 minutes..")
   time.sleep(600)
