@@ -29,7 +29,7 @@
 <p>There are two methods you can use, No loop and Autoloop.</p>
 <p>I recommend you to use no loop method with Github Actions because it's less complicated and less obstructive.</p>
 <h4>No loop method</h4>
-<p>There are a Github Actions workflow that have been set with cron jobs. They will run automatically at 00:00 UTC 1st and 15th of a month and when they're running, they will switch the dynos respectively.<br>
+<p>There is a Github Actions workflow that have been set with cron jobs. They will run automatically at 00:00 UTC 1st and 15th of a month and when they're running, they will switch the dynos respectively.<br>
 </p>
 <h4>Autoloop method</h4>
 <p>Every 10 mins, the script will check if today is either 1st or 15th of a month. If it's true, then it'll switch the dynos respectively.</p>
