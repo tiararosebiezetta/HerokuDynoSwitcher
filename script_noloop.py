@@ -100,7 +100,7 @@ if(len(SECOND_PROCESSTYPE) != 0 and len(SECOND_A_APIKEY) != 0 and len(SECOND_A_A
   else:
     print("Today is not 1st or 15nd.")
 else:
-  print("Variables for the first app are not fully filled.")
+  print("Variables for the second app are not fully filled.")
     
 # third pair of apps
 print("\n[#3] Checking the conditions for the third app..")
@@ -132,7 +132,7 @@ if(len(THIRD_PROCESSTYPE) != 0 and len(THIRD_A_APIKEY) != 0 and len(THIRD_A_APPN
   else:
     print("Today is not 1st or 15nd.")
 else:
-  print("Variables for the first app are not fully filled.")
+  print("Variables for the third app are not fully filled.")
     
 # fourth pair of apps
 print("\n[#4] Checking the conditions for the fourth app..")
@@ -164,7 +164,7 @@ if(len(FOURTH_PROCESSTYPE) != 0 and len(FOURTH_A_APIKEY) != 0 and len(FOURTH_A_A
   else:
     print("Today is not 1st or 15nd.")
 else:
-  print("Variables for the first app are not fully filled.")
+  print("Variables for the fourth app are not fully filled.")
     
 # fifth pair of apps
 print("\n[#5] Checking the conditions for the fifth app..")
@@ -196,7 +196,7 @@ if(len(FIFTH_PROCESSTYPE) != 0 and len(FIFTH_A_APIKEY) != 0 and len(FIFTH_A_APPN
   else:
     print("Today is not 1st or 15nd.")
 else:
-  print("Variables for the first app are not fully filled.")
+  print("Variables for the fifth app are not fully filled.")
     
 # Ending the current process
 print("\nThe script has been executed.")
