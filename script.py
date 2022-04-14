@@ -13,7 +13,7 @@ from datetime import datetime
 
 loop = False
 
-if len(sys.argv != 0):
+if len(sys.argv) == 1:
     if sys.argv[1] == "--loop":
         loop = True
         print("Looping the process...")
@@ -58,14 +58,14 @@ def action(appno, process_type, app_name1, api_key1, app_name2, api_key2):
 
 if __name__ == "__main__":
     while True:
-        for appNumber in range(1, TOTAL_APP_PAIRS + 1):
-            PROCESS_TYPE = os.environ.get(f'PROCESSTYPE_{appNumber}', "")
-            A_APIKEY = os.environ.get(f'A_APIKEY_{appNumber}', "")
-            A_APPNAME = os.environ.get(f'A_APPNAME_{appNumber}', "")
-            B_APIKEY = os.environ.get(f'B_APIKEY_{appNumber}', "")
-            B_APPNAME = os.environ.get(f'B_APPNAME_{appNumber}', "")
+        for app in range(1, TOTAL_APP_PAIRS + 1):
+            PROCESS_TYPE = os.environ.get(f'PROCESSTYPE_{app}', "")
+            A_APIKEY = os.environ.get(f'A_APIKEY_{app}', "")
+            A_APPNAME = os.environ.get(f'A_APPNAME_{app}', "")
+            B_APIKEY = os.environ.get(f'B_APIKEY_{app}', "")
+            B_APPNAME = os.environ.get(f'B_APPNAME_{app}', "")
 
-            action(appNumber, PROCESS_TYPE, A_APPNAME,
+            action(app, PROCESS_TYPE, A_APPNAME,
                    A_APIKEY, B_APPNAME, B_APIKEY)
 
             print("Sleeping for 10 minutes...")
