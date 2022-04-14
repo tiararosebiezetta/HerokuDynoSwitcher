@@ -1,1 +1,1 @@
-heroku3
+heroku3==5.1.4

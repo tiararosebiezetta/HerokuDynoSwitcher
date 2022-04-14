@@ -15,7 +15,7 @@ jobs:
       - name: Installing heroku3
         run: pip install -r requirements.txt
       - name: Switching the dyno
-        run: python3 script_noloop.py
+        run: python3 script.py
         env:
           FIRST_PROCESSTYPE: ${{ secrets.FIRST_PROCESSTYPE }}
           FIRST_A_APIKEY: ${{ secrets.FIRST_A_APIKEY }}
